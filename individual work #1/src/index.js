@@ -1,6 +1,6 @@
 import TransactionAnalyzer from "./TransactionAnalyzer.js";
 import * as fs from 'fs';
-const transactions = JSON.parse(fs.readFileSync('./transactions.json'));
+const transactions = JSON.parse(fs.readFileSync('src/transactions.json'));
 const analyzer = new TransactionAnalyzer(transactions);
 
 const transaction = {
