@@ -1,0 +1,10 @@
+.activity{
+    border: 1px solid salmon;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+}
+.activity-text{
+    font-size:18px;
+    font-weight: 700;
+}
