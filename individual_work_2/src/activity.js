@@ -1,5 +1,9 @@
 const url = 'https://www.boredapi.com/api/activity/';
-
+/**
+ * Fetches a random activity from a specified API endpoint.
+ * @returns {Promise<Object>} A promise that resolves with the random activity object.
+ * @throws {Error} If there is an error fetching or parsing the activity data.
+ */
 async function getRandomActivity(){
     const json = await (await fetch(url)).json();
     
@@ -8,7 +12,11 @@ async function getRandomActivity(){
     throw Error(json.error);
     
 }
-
+/**
+ * Updates the HTML content with details of a random activity.
+ * If an error occurs during fetching or updating, an error message is displayed in the HTML.
+ * @returns {Promise<void>} A promise that resolves once the activity is updated in the DOM.
+ */
 async function updateActivity(){
     const activity  = document.querySelector('#activity');
     let randActivity;
@@ -37,13 +45,16 @@ async function updateActivity(){
         </div>
     `;
 }
-
-function changeActivityAfter(time){
+/**
+ * Sets an interval to update the activity details periodically.
+ * @param {number} time - The interval time in milliseconds.
+ */
+function changeActivityEvery(time){
     setInterval(updateActivity,time);
 }
 
 export{
    getRandomActivity,
    updateActivity,
-   changeActivityAfter,
+   changeActivityEvery,
 }
