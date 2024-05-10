@@ -1,0 +1,66 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 75%;
+}
+h1{
+    color: slateblue;
+}
+form {
+    margin: 25px 0px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+.form-title{
+    font-size: 21px;
+    font-weight: 800;
+    color: slateblue;
+}
+input{
+    border: 3px solid salmon;
+    border-radius: 50px;
+    padding: 3px 3px 3px 10px;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+table {
+    background-color: rgb(138, 126, 215);
+    border: 3px solid slateblue;
+    font-size: large;
+    border-collapse: collapse;
+}
+td,th {
+   border: 3px solid slateblue;
+   padding: 3px;
+}
+button{
+   border: 3px solid slateblue;
+   border-radius: 50px; 
+   color: salmon;
+   background-color: rgb(115, 101, 207);
+}
+.total-amount{
+    border: 3px solid salmon;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    color: slateblue;
+    font-size: 18px;
+    padding: 5px 15px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.transaction-description{
+    margin: 15px 0px;
+    padding: 15px;
+    border: 3px solid salmon;
+    border-radius: 25px;
+    color: slateblue;
+    background-color: antiquewhite;
+}
+.transaction-description span{
+    font-size: 21px;
+    font-weight: 700;
+}

@@ -28,7 +28,8 @@ async function updateActivity(){
     }
    
     activity.innerHTML = `
-        <div class="activity activity-link">
+
+        <div  class="activity activity-link">
             <span class="activity-text">Do activity:</span> ${randActivity.activity}</h3>
         </div>
         <div class="activity activity-type">
